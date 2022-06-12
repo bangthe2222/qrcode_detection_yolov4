@@ -2,6 +2,7 @@
 
 Install library
 pip3 install -r requirements.txt
+
 Run
 python3 qrcode_detect.py
   
