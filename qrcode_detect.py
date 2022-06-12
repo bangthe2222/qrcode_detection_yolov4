@@ -100,8 +100,8 @@ def detect(image, net, classes):
         draw_prediction(image, class_ids[i],confidences[i], round(x), round(y), round(x + w), round(y + h),classes)
         Result += textpredict
         print(Result)
-    cv2.putText(image, "x: " + str((x+w)/2)  , (20,20 ), cv2.FONT_HERSHEY_COMPLEX_SMALL, 1, (255,0,0), 1)
-    cv2.putText(image, "y: " + str((y+h)/2)  , (20,50 ), cv2.FONT_HERSHEY_COMPLEX_SMALL, 1, (255,0,0), 1)
+    cv2.putText(image, "x: " + str(x+w/2)  , (20,20 ), cv2.FONT_HERSHEY_COMPLEX_SMALL, 1, (255,0,0), 1)
+    cv2.putText(image, "y: " + str(y+h/2)  , (20,50 ), cv2.FONT_HERSHEY_COMPLEX_SMALL, 1, (255,0,0), 1)
     #savePredict(pathSave, name, textPre) # Doi thanh con tro ve dia chi cua anh
         
     scale_percent = 100
