@@ -38,9 +38,6 @@ def loadWeight(weights = "./yolo-config_10000.weights" ,cfg ="./yolo-config.cfg"
 def detect(image, net, classes):
 
     scale = 0.00392
-
-
-
     Width = image.shape[1]
     Height = image.shape[0]
     blob = cv2.dnn.blobFromImage(image, scale, (416, 416), (0, 0, 0), True, crop=False)
