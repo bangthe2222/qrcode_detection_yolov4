@@ -115,7 +115,7 @@ def detect(image, net, classes):
 
 if __name__ == "__main__":
     cap = cv2.VideoCapture(0)
-    net, classes = loadWeight(weights = "./qr_code_yolov4_tiny.weights",cfg ="./yolo-config.cfg",class_name = "./obj.names")
+    net, classes = loadWeight(weights = "./yolov4-tiny-custom_best.weights",cfg ="./yolo-config.cfg",class_name = "./obj.names")
 
     while True:
         ret, frame = cap.read()
